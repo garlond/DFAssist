@@ -157,10 +157,10 @@ namespace App
         {
             try
             {
+         
                 var length = socket.EndReceive(ar);
                 var buffer = recvBuffer.Take(length).ToArray();
                 socket.BeginReceive(recvBuffer, 0, recvBuffer.Length, 0, new AsyncCallback(OnReceive), null);
-
                 FilterAndProcessPacket(buffer);
             }
             catch (Exception ex) when (ex is ObjectDisposedException || ex is NullReferenceException)

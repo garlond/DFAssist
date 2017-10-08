@@ -100,6 +100,48 @@ namespace App
             D(sb.ToString());
         }
 
+        internal static void Bu(byte[] buffer)
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine();
+            string ascii = "";
+
+            for (var i = 0; i < buffer.Length; i++)
+            {
+                if (i != 0)
+                {
+                    if (i % 16 == 0)
+                    {
+                        sb.Append(" ");
+                        sb.Append(ascii);
+                        sb.AppendLine();
+                        ascii = "";
+                    }
+                    else if (i % 8 == 0)
+                    {
+                        sb.Append(' ', 2);
+                    }
+                    else
+                    {
+                        sb.Append(' ');
+                    }
+                }
+                
+                
+                if(Char.GetUnicodeCategory((char)buffer[i]) != System.Globalization.UnicodeCategory.Control)
+                {
+                    byte[] bytes = { buffer[i] };
+                    ascii += System.Text.Encoding.UTF8.GetString(bytes);
+                } else
+                {
+                    ascii += ".";
+                }
+                sb.Append(buffer[i].ToString("X2"));
+            }
+
+            D(sb.ToString());
+        }
+
         private static string Escape(string line)
         {
             return EscapePattern.Replace(line, "{{$1}}");

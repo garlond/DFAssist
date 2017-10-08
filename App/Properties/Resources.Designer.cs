@@ -88,7 +88,8 @@ namespace App.Properties {
         ///      &quot;dps&quot;: &quot;2&quot;
         ///    },
         ///    &quot;161&quot;: {
-        ///      &quot;name&quot;: &quot;Copperbe [rest of string was truncated]&quot;;.
+        ///      &quot;name&quot;: &quot;Copperbell Mines&quot;,
+        ///      &quot;tank&quot;: &quot;1 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_EN_US {
             get {
@@ -124,7 +125,8 @@ namespace App.Properties {
         ///      &quot;dps&quot;: &quot;2&quot;
         ///    },
         ///    &quot;161&quot;: {
-        ///      &quot;name&quot;: &quot;les M [rest of string was truncated]&quot;;.
+        ///      &quot;name&quot;: &quot;les Mines de Clochecuivre&quot;,
+        ///     [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_FR_FR {
             get {
@@ -162,7 +164,10 @@ namespace App.Properties {
         ///    &quot;161&quot;: {
         ///      &quot;name&quot;: &quot;구리종 광산&quot;,
         ///      &quot;tank&quot;: &quot;1&quot;,
-        ///      &quot;healer&quot;: &quot; [rest of string was truncated]&quot;;.
+        ///      &quot;healer&quot;: &quot;1&quot;,
+        ///      &quot;dps&quot;: &quot;2&quot;
+        ///    },
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_KO_KR {
             get {
@@ -190,7 +195,7 @@ namespace App.Properties {
         ///
         ///
         ///  &quot;fate-preset-animus-SkyfireI&quot;: &quot;Book of Skyfire I&quot;,
-        ///  &quot;fate-preset-anim [rest of string was truncated]&quot;;.
+        ///  &quot;fate-preset-animus-SkyfireII&quot;: &quot;Boo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Localization_EN_US {
             get {
@@ -217,7 +222,8 @@ namespace App.Properties {
         ///  &quot;tweet-queue-matched&quot;: &quot;&lt; {0} &gt; disponible!&quot;,
         ///
         ///
-        ///  &quot;fate-preset-animus-SkyfireI&quot;: &quot;Book of Sk [rest of string was truncated]&quot;;.
+        ///  &quot;fate-preset-animus-SkyfireI&quot;: &quot;Book of Skyfire I&quot;,
+        ///  &quot;fate- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Localization_FR_FR {
             get {
@@ -246,7 +252,8 @@ namespace App.Properties {
         ///
         ///  &quot;fate-preset-animus-SkyfireI&quot;: &quot;불의 서 1권&quot;,
         ///  &quot;fate-preset-animus-SkyfireII&quot;: &quot;불의 서 2권&quot;,
-        ///  &quot;fate-preset-animus-Nether [rest of string was truncated]&quot;;.
+        ///  &quot;fate-preset-animus-NetherfireI&quot;: &quot;불의 서 3권&quot;,
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Localization_KO_KR {
             get {

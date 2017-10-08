@@ -105,9 +105,10 @@
             this.label_AboutTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label_AboutTitle.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.label_AboutTitle.ForeColor = System.Drawing.Color.Gray;
-            this.label_AboutTitle.Location = new System.Drawing.Point(0, 297);
+            this.label_AboutTitle.Location = new System.Drawing.Point(0, 446);
+            this.label_AboutTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_AboutTitle.Name = "label_AboutTitle";
-            this.label_AboutTitle.Size = new System.Drawing.Size(544, 24);
+            this.label_AboutTitle.Size = new System.Drawing.Size(816, 36);
             this.label_AboutTitle.TabIndex = 0;
             this.label_AboutTitle.Text = "VERSION STRING";
             this.label_AboutTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -115,9 +116,10 @@
             // button_ResetProcess
             // 
             this.button_ResetProcess.Font = new System.Drawing.Font("Malgun Gothic", 8F);
-            this.button_ResetProcess.Location = new System.Drawing.Point(288, 0);
+            this.button_ResetProcess.Location = new System.Drawing.Point(432, 0);
+            this.button_ResetProcess.Margin = new System.Windows.Forms.Padding(4);
             this.button_ResetProcess.Name = "button_ResetProcess";
-            this.button_ResetProcess.Size = new System.Drawing.Size(60, 27);
+            this.button_ResetProcess.Size = new System.Drawing.Size(90, 40);
             this.button_ResetProcess.TabIndex = 0;
             this.button_ResetProcess.Text = "재설정";
             this.button_ResetProcess.UseVisualStyleBackColor = true;
@@ -128,18 +130,20 @@
             this.comboBox_Process.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Process.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.comboBox_Process.FormattingEnabled = true;
-            this.comboBox_Process.Location = new System.Drawing.Point(107, 2);
+            this.comboBox_Process.Location = new System.Drawing.Point(160, 3);
+            this.comboBox_Process.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Process.Name = "comboBox_Process";
-            this.comboBox_Process.Size = new System.Drawing.Size(120, 23);
+            this.comboBox_Process.Size = new System.Drawing.Size(178, 33);
             this.comboBox_Process.Sorted = true;
             this.comboBox_Process.TabIndex = 0;
             // 
             // button_SelectProcess
             // 
             this.button_SelectProcess.Font = new System.Drawing.Font("Malgun Gothic", 8F);
-            this.button_SelectProcess.Location = new System.Drawing.Point(228, 0);
+            this.button_SelectProcess.Location = new System.Drawing.Point(342, 0);
+            this.button_SelectProcess.Margin = new System.Windows.Forms.Padding(4);
             this.button_SelectProcess.Name = "button_SelectProcess";
-            this.button_SelectProcess.Size = new System.Drawing.Size(60, 27);
+            this.button_SelectProcess.Size = new System.Drawing.Size(90, 40);
             this.button_SelectProcess.TabIndex = 0;
             this.button_SelectProcess.Text = "수동설정";
             this.button_SelectProcess.UseVisualStyleBackColor = true;
@@ -148,9 +152,10 @@
             // button_ResetOverlayPosition
             // 
             this.button_ResetOverlayPosition.Font = new System.Drawing.Font("Malgun Gothic", 8F);
-            this.button_ResetOverlayPosition.Location = new System.Drawing.Point(110, 22);
+            this.button_ResetOverlayPosition.Location = new System.Drawing.Point(165, 33);
+            this.button_ResetOverlayPosition.Margin = new System.Windows.Forms.Padding(4);
             this.button_ResetOverlayPosition.Name = "button_ResetOverlayPosition";
-            this.button_ResetOverlayPosition.Size = new System.Drawing.Size(74, 20);
+            this.button_ResetOverlayPosition.Size = new System.Drawing.Size(111, 30);
             this.button_ResetOverlayPosition.TabIndex = 0;
             this.button_ResetOverlayPosition.Text = "위치 초기화";
             this.button_ResetOverlayPosition.UseVisualStyleBackColor = true;
@@ -162,9 +167,10 @@
             this.checkBox_Overlay.Checked = true;
             this.checkBox_Overlay.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_Overlay.Font = new System.Drawing.Font("Malgun Gothic", 9F);
-            this.checkBox_Overlay.Location = new System.Drawing.Point(6, 23);
+            this.checkBox_Overlay.Location = new System.Drawing.Point(9, 34);
+            this.checkBox_Overlay.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Overlay.Name = "checkBox_Overlay";
-            this.checkBox_Overlay.Size = new System.Drawing.Size(102, 19);
+            this.checkBox_Overlay.Size = new System.Drawing.Size(152, 29);
             this.checkBox_Overlay.TabIndex = 0;
             this.checkBox_Overlay.Text = "오버레이 사용";
             this.toolTip.SetToolTip(this.checkBox_Overlay, "오버레이 UI의 좌측 막대를 이용해 드래그 할 수 있습니다.");
@@ -181,23 +187,24 @@
             // 
             // contextMenuStrip
             // 
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem_Open,
             this.toolStripMenuItem_Close});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(99, 48);
+            this.contextMenuStrip.Size = new System.Drawing.Size(121, 64);
             // 
             // toolStripMenuItem_Open
             // 
             this.toolStripMenuItem_Open.Name = "toolStripMenuItem_Open";
-            this.toolStripMenuItem_Open.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem_Open.Size = new System.Drawing.Size(120, 30);
             this.toolStripMenuItem_Open.Text = "열기";
             this.toolStripMenuItem_Open.Click += new System.EventHandler(this.toolStripMenuItem_Open_Click);
             // 
             // toolStripMenuItem_Close
             // 
             this.toolStripMenuItem_Close.Name = "toolStripMenuItem_Close";
-            this.toolStripMenuItem_Close.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem_Close.Size = new System.Drawing.Size(120, 30);
             this.toolStripMenuItem_Close.Text = "종료";
             this.toolStripMenuItem_Close.Click += new System.EventHandler(this.toolStripMenuItem_Close_Click);
             // 
@@ -211,9 +218,10 @@
             this.panel_TopSetting.Controls.Add(this.button_ResetProcess);
             this.panel_TopSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_TopSetting.Location = new System.Drawing.Point(0, 0);
+            this.panel_TopSetting.Margin = new System.Windows.Forms.Padding(4);
             this.panel_TopSetting.Name = "panel_TopSetting";
-            this.panel_TopSetting.Padding = new System.Windows.Forms.Padding(5);
-            this.panel_TopSetting.Size = new System.Drawing.Size(544, 27);
+            this.panel_TopSetting.Padding = new System.Windows.Forms.Padding(8);
+            this.panel_TopSetting.Size = new System.Drawing.Size(816, 40);
             this.panel_TopSetting.TabIndex = 1;
             // 
             // label_Process
@@ -222,9 +230,10 @@
             this.label_Process.Dock = System.Windows.Forms.DockStyle.Left;
             this.label_Process.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_Process.ForeColor = System.Drawing.Color.Gray;
-            this.label_Process.Location = new System.Drawing.Point(5, 5);
+            this.label_Process.Location = new System.Drawing.Point(8, 8);
+            this.label_Process.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Process.Name = "label_Process";
-            this.label_Process.Size = new System.Drawing.Size(100, 17);
+            this.label_Process.Size = new System.Drawing.Size(151, 28);
             this.label_Process.TabIndex = 0;
             this.label_Process.Text = "FFXIV 프로세스";
             // 
@@ -236,9 +245,10 @@
             this.comboBox_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Language.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.comboBox_Language.FormattingEnabled = true;
-            this.comboBox_Language.Location = new System.Drawing.Point(480, 2);
+            this.comboBox_Language.Location = new System.Drawing.Point(720, 3);
+            this.comboBox_Language.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Language.Name = "comboBox_Language";
-            this.comboBox_Language.Size = new System.Drawing.Size(62, 23);
+            this.comboBox_Language.Size = new System.Drawing.Size(91, 33);
             this.comboBox_Language.TabIndex = 4;
             this.comboBox_Language.ValueMember = "Code";
             // 
@@ -251,11 +261,12 @@
             this.tabControl.Controls.Add(this.tabPage_Info);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.ItemSize = new System.Drawing.Size(30, 110);
-            this.tabControl.Location = new System.Drawing.Point(0, 27);
+            this.tabControl.Location = new System.Drawing.Point(0, 40);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl.Multiline = true;
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(544, 270);
+            this.tabControl.Size = new System.Drawing.Size(816, 406);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
             // 
@@ -265,8 +276,9 @@
             this.tabPage_Settings.Controls.Add(this.groupBox_TwitterSet);
             this.tabPage_Settings.Controls.Add(this.groupBox_DefaultSet);
             this.tabPage_Settings.Location = new System.Drawing.Point(114, 4);
+            this.tabPage_Settings.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Settings.Name = "tabPage_Settings";
-            this.tabPage_Settings.Size = new System.Drawing.Size(426, 262);
+            this.tabPage_Settings.Size = new System.Drawing.Size(698, 398);
             this.tabPage_Settings.TabIndex = 1;
             this.tabPage_Settings.Text = "설정";
             // 
@@ -277,9 +289,11 @@
             this.groupBox_TwitterSet.Controls.Add(this.label_TwitterAbout);
             this.groupBox_TwitterSet.Controls.Add(this.checkBox_Twitter);
             this.groupBox_TwitterSet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox_TwitterSet.Location = new System.Drawing.Point(0, 151);
+            this.groupBox_TwitterSet.Location = new System.Drawing.Point(0, 226);
+            this.groupBox_TwitterSet.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_TwitterSet.Name = "groupBox_TwitterSet";
-            this.groupBox_TwitterSet.Size = new System.Drawing.Size(426, 111);
+            this.groupBox_TwitterSet.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox_TwitterSet.Size = new System.Drawing.Size(698, 166);
             this.groupBox_TwitterSet.TabIndex = 0;
             this.groupBox_TwitterSet.TabStop = false;
             this.groupBox_TwitterSet.Text = "트위터 알림";
@@ -287,28 +301,31 @@
             // textBox_Twitter
             // 
             this.textBox_Twitter.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBox_Twitter.Location = new System.Drawing.Point(37, 25);
+            this.textBox_Twitter.Location = new System.Drawing.Point(56, 38);
+            this.textBox_Twitter.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Twitter.MaxLength = 16;
             this.textBox_Twitter.Name = "textBox_Twitter";
-            this.textBox_Twitter.Size = new System.Drawing.Size(156, 25);
+            this.textBox_Twitter.Size = new System.Drawing.Size(232, 33);
             this.textBox_Twitter.TabIndex = 0;
             this.textBox_Twitter.TextChanged += new System.EventHandler(this.textBox_Twitter_TextChanged);
             // 
             // label_TwitterAt
             // 
             this.label_TwitterAt.AutoSize = true;
-            this.label_TwitterAt.Location = new System.Drawing.Point(12, 28);
+            this.label_TwitterAt.Location = new System.Drawing.Point(18, 42);
+            this.label_TwitterAt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_TwitterAt.Name = "label_TwitterAt";
-            this.label_TwitterAt.Size = new System.Drawing.Size(21, 17);
+            this.label_TwitterAt.Size = new System.Drawing.Size(32, 28);
             this.label_TwitterAt.TabIndex = 0;
             this.label_TwitterAt.Text = "@";
             // 
             // label_TwitterAbout
             // 
             this.label_TwitterAbout.Font = new System.Drawing.Font("Malgun Gothic", 8F);
-            this.label_TwitterAbout.Location = new System.Drawing.Point(13, 61);
+            this.label_TwitterAbout.Location = new System.Drawing.Point(20, 92);
+            this.label_TwitterAbout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_TwitterAbout.Name = "label_TwitterAbout";
-            this.label_TwitterAbout.Size = new System.Drawing.Size(407, 48);
+            this.label_TwitterAbout.Size = new System.Drawing.Size(610, 72);
             this.label_TwitterAbout.TabIndex = 0;
             this.label_TwitterAbout.Text = "매칭이 됐을 시 입력된 트위터 계정으로 멘션을 보내 해당 사실을 알립니다.\r\n원하는 돌발이 발생했을 시에도 멘션을 보내 해당 사실을 알립니다.\r\n" +
     "계정명 입력시 앞의 @ 표시는 제외하고 순수 계정명만 입력해주세요.";
@@ -316,9 +333,10 @@
             // checkBox_Twitter
             // 
             this.checkBox_Twitter.AutoSize = true;
-            this.checkBox_Twitter.Location = new System.Drawing.Point(199, 28);
+            this.checkBox_Twitter.Location = new System.Drawing.Point(298, 42);
+            this.checkBox_Twitter.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_Twitter.Name = "checkBox_Twitter";
-            this.checkBox_Twitter.Size = new System.Drawing.Size(66, 21);
+            this.checkBox_Twitter.Size = new System.Drawing.Size(98, 32);
             this.checkBox_Twitter.TabIndex = 0;
             this.checkBox_Twitter.Text = "활성화";
             this.checkBox_Twitter.UseVisualStyleBackColor = true;
@@ -334,8 +352,10 @@
             this.groupBox_DefaultSet.Controls.Add(this.checkBox_Overlay);
             this.groupBox_DefaultSet.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox_DefaultSet.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_DefaultSet.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_DefaultSet.Name = "groupBox_DefaultSet";
-            this.groupBox_DefaultSet.Size = new System.Drawing.Size(426, 151);
+            this.groupBox_DefaultSet.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox_DefaultSet.Size = new System.Drawing.Size(698, 226);
             this.groupBox_DefaultSet.TabIndex = 0;
             this.groupBox_DefaultSet.TabStop = false;
             this.groupBox_DefaultSet.Text = "기본설정";
@@ -344,9 +364,10 @@
             // 
             this.checkBox_ShowAnnouncement.AutoSize = true;
             this.checkBox_ShowAnnouncement.Font = new System.Drawing.Font("Malgun Gothic", 9F);
-            this.checkBox_ShowAnnouncement.Location = new System.Drawing.Point(6, 103);
+            this.checkBox_ShowAnnouncement.Location = new System.Drawing.Point(9, 154);
+            this.checkBox_ShowAnnouncement.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_ShowAnnouncement.Name = "checkBox_ShowAnnouncement";
-            this.checkBox_ShowAnnouncement.Size = new System.Drawing.Size(190, 19);
+            this.checkBox_ShowAnnouncement.Size = new System.Drawing.Size(284, 29);
             this.checkBox_ShowAnnouncement.TabIndex = 3;
             this.checkBox_ShowAnnouncement.Text = "오버레이에 공지사항 보여주기";
             this.checkBox_ShowAnnouncement.UseVisualStyleBackColor = true;
@@ -356,9 +377,10 @@
             // 
             this.checkBox_FlashWindow.AutoSize = true;
             this.checkBox_FlashWindow.Font = new System.Drawing.Font("Malgun Gothic", 9F);
-            this.checkBox_FlashWindow.Location = new System.Drawing.Point(6, 83);
+            this.checkBox_FlashWindow.Location = new System.Drawing.Point(9, 124);
+            this.checkBox_FlashWindow.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_FlashWindow.Name = "checkBox_FlashWindow";
-            this.checkBox_FlashWindow.Size = new System.Drawing.Size(369, 19);
+            this.checkBox_FlashWindow.Size = new System.Drawing.Size(551, 29);
             this.checkBox_FlashWindow.TabIndex = 2;
             this.checkBox_FlashWindow.Text = "매칭/돌발 발생시 파이널판타지14 작업 표시줄 아이콘 깜빡이기";
             this.checkBox_FlashWindow.UseVisualStyleBackColor = true;
@@ -368,9 +390,10 @@
             // 
             this.checkBox_AutoOverlayHide.AutoSize = true;
             this.checkBox_AutoOverlayHide.Font = new System.Drawing.Font("Malgun Gothic", 9F);
-            this.checkBox_AutoOverlayHide.Location = new System.Drawing.Point(6, 63);
+            this.checkBox_AutoOverlayHide.Location = new System.Drawing.Point(9, 94);
+            this.checkBox_AutoOverlayHide.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_AutoOverlayHide.Name = "checkBox_AutoOverlayHide";
-            this.checkBox_AutoOverlayHide.Size = new System.Drawing.Size(222, 19);
+            this.checkBox_AutoOverlayHide.Size = new System.Drawing.Size(332, 29);
             this.checkBox_AutoOverlayHide.TabIndex = 1;
             this.checkBox_AutoOverlayHide.Text = "임무 입장시 자동으로 오버레이 숨김";
             this.checkBox_AutoOverlayHide.UseVisualStyleBackColor = true;
@@ -380,9 +403,10 @@
             // 
             this.checkBox_StartupShow.AutoSize = true;
             this.checkBox_StartupShow.Font = new System.Drawing.Font("Malgun Gothic", 9F);
-            this.checkBox_StartupShow.Location = new System.Drawing.Point(6, 43);
+            this.checkBox_StartupShow.Location = new System.Drawing.Point(9, 64);
+            this.checkBox_StartupShow.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_StartupShow.Name = "checkBox_StartupShow";
-            this.checkBox_StartupShow.Size = new System.Drawing.Size(186, 19);
+            this.checkBox_StartupShow.Size = new System.Drawing.Size(278, 29);
             this.checkBox_StartupShow.TabIndex = 0;
             this.checkBox_StartupShow.Text = "프로그램 시작시 이 창 보이기";
             this.checkBox_StartupShow.UseVisualStyleBackColor = true;
@@ -395,8 +419,9 @@
             this.tabPage_FATE.Controls.Add(this.triStateTreeView_FATEs);
             this.tabPage_FATE.Controls.Add(this.menuStrip_FATETab);
             this.tabPage_FATE.Location = new System.Drawing.Point(114, 4);
+            this.tabPage_FATE.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_FATE.Name = "tabPage_FATE";
-            this.tabPage_FATE.Size = new System.Drawing.Size(426, 262);
+            this.tabPage_FATE.Size = new System.Drawing.Size(698, 398);
             this.tabPage_FATE.TabIndex = 0;
             this.tabPage_FATE.Text = "돌발";
             // 
@@ -404,9 +429,10 @@
             // 
             this.label_FATEAbout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label_FATEAbout.Font = new System.Drawing.Font("Malgun Gothic", 8F);
-            this.label_FATEAbout.Location = new System.Drawing.Point(0, 230);
+            this.label_FATEAbout.Location = new System.Drawing.Point(0, 350);
+            this.label_FATEAbout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_FATEAbout.Name = "label_FATEAbout";
-            this.label_FATEAbout.Size = new System.Drawing.Size(426, 32);
+            this.label_FATEAbout.Size = new System.Drawing.Size(698, 48);
             this.label_FATEAbout.TabIndex = 2;
             this.label_FATEAbout.Text = "알림을 받고자 하는 돌발을 선택하신 뒤 상단 적용하기 버튼을 눌러주세요.\r\n돌발 알림은 캐릭터가 해당 지역에 있을 때에만 동작합니다.";
             // 
@@ -416,15 +442,17 @@
             this.triStateTreeView_FATEs.Dock = System.Windows.Forms.DockStyle.Top;
             this.triStateTreeView_FATEs.FullRowSelect = true;
             this.triStateTreeView_FATEs.HotTracking = true;
-            this.triStateTreeView_FATEs.Location = new System.Drawing.Point(0, 24);
+            this.triStateTreeView_FATEs.Location = new System.Drawing.Point(0, 35);
+            this.triStateTreeView_FATEs.Margin = new System.Windows.Forms.Padding(4);
             this.triStateTreeView_FATEs.Name = "triStateTreeView_FATEs";
-            this.triStateTreeView_FATEs.Size = new System.Drawing.Size(426, 203);
+            this.triStateTreeView_FATEs.Size = new System.Drawing.Size(698, 302);
             this.triStateTreeView_FATEs.TabIndex = 0;
             this.triStateTreeView_FATEs.TriStateStyleProperty = RikTheVeggie.TriStateTreeView.TriStateStyles.Installer;
             // 
             // menuStrip_FATETab
             // 
             this.menuStrip_FATETab.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip_FATETab.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip_FATETab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem_SelectAll,
             this.toolStripMenuItem_UnSelectAll,
@@ -432,21 +460,22 @@
             this.toolStripMenuItem_SelectApply});
             this.menuStrip_FATETab.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_FATETab.Name = "menuStrip_FATETab";
-            this.menuStrip_FATETab.Size = new System.Drawing.Size(426, 24);
+            this.menuStrip_FATETab.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip_FATETab.Size = new System.Drawing.Size(698, 35);
             this.menuStrip_FATETab.TabIndex = 0;
             this.menuStrip_FATETab.Text = "menuStrip1";
             // 
             // toolStripMenuItem_SelectAll
             // 
             this.toolStripMenuItem_SelectAll.Name = "toolStripMenuItem_SelectAll";
-            this.toolStripMenuItem_SelectAll.Size = new System.Drawing.Size(70, 20);
+            this.toolStripMenuItem_SelectAll.Size = new System.Drawing.Size(101, 29);
             this.toolStripMenuItem_SelectAll.Text = "모두 선택";
             this.toolStripMenuItem_SelectAll.Click += new System.EventHandler(this.toolStripMenuItem_SelectAll_Click);
             // 
             // toolStripMenuItem_UnSelectAll
             // 
             this.toolStripMenuItem_UnSelectAll.Name = "toolStripMenuItem_UnSelectAll";
-            this.toolStripMenuItem_UnSelectAll.Size = new System.Drawing.Size(70, 20);
+            this.toolStripMenuItem_UnSelectAll.Size = new System.Drawing.Size(101, 29);
             this.toolStripMenuItem_UnSelectAll.Text = "모두 해제";
             this.toolStripMenuItem_UnSelectAll.Click += new System.EventHandler(this.toolStripMenuItem_UnSelectAll_Click);
             // 
@@ -466,84 +495,84 @@
             this.toolStripMenuItem3,
             this.bookOfSkyearthIToolStripMenuItem});
             this.presetToolStripMenuItem.Name = "presetToolStripMenuItem";
-            this.presetToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.presetToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
             this.presetToolStripMenuItem.Text = "프리셋";
             // 
             // bookOfSkyfireIToolStripMenuItem
             // 
             this.bookOfSkyfireIToolStripMenuItem.Name = "bookOfSkyfireIToolStripMenuItem";
-            this.bookOfSkyfireIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkyfireIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkyfireIToolStripMenuItem.Text = "불의 서 1권";
             this.bookOfSkyfireIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfireIToolStripMenuItem_Click);
             // 
             // bookOfSkyfireIIToolStripMenuItem
             // 
             this.bookOfSkyfireIIToolStripMenuItem.Name = "bookOfSkyfireIIToolStripMenuItem";
-            this.bookOfSkyfireIIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkyfireIIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkyfireIIToolStripMenuItem.Text = "불의 서 2권";
             this.bookOfSkyfireIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfireIIToolStripMenuItem_Click);
             // 
             // bookOfNetherfireIToolStripMenuItem
             // 
             this.bookOfNetherfireIToolStripMenuItem.Name = "bookOfNetherfireIToolStripMenuItem";
-            this.bookOfNetherfireIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfNetherfireIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfNetherfireIToolStripMenuItem.Text = "불의 서 3권";
             this.bookOfNetherfireIToolStripMenuItem.Click += new System.EventHandler(this.bookOfNetherfireIToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(203, 6);
             // 
             // bookOfSkyfallIToolStripMenuItem
             // 
             this.bookOfSkyfallIToolStripMenuItem.Name = "bookOfSkyfallIToolStripMenuItem";
-            this.bookOfSkyfallIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkyfallIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkyfallIToolStripMenuItem.Text = "물의 서 1권";
             this.bookOfSkyfallIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfallIToolStripMenuItem_Click);
             // 
             // bookOfSkyfallIIToolStripMenuItem
             // 
             this.bookOfSkyfallIIToolStripMenuItem.Name = "bookOfSkyfallIIToolStripMenuItem";
-            this.bookOfSkyfallIIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkyfallIIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkyfallIIToolStripMenuItem.Text = "물의 서 2권";
             this.bookOfSkyfallIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfallIIToolStripMenuItem_Click);
             // 
             // bookOfNetherfireIToolStripMenuItem1
             // 
             this.bookOfNetherfireIToolStripMenuItem1.Name = "bookOfNetherfireIToolStripMenuItem1";
-            this.bookOfNetherfireIToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.bookOfNetherfireIToolStripMenuItem1.Size = new System.Drawing.Size(206, 30);
             this.bookOfNetherfireIToolStripMenuItem1.Text = "물의 서 3권";
             this.bookOfNetherfireIToolStripMenuItem1.Click += new System.EventHandler(this.bookOfNetherfireIToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(203, 6);
             // 
             // bookOfSkywindIToolStripMenuItem
             // 
             this.bookOfSkywindIToolStripMenuItem.Name = "bookOfSkywindIToolStripMenuItem";
-            this.bookOfSkywindIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkywindIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkywindIToolStripMenuItem.Text = "바람의 서 1권";
             this.bookOfSkywindIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkywindIToolStripMenuItem_Click);
             // 
             // bookOfSkywindIIToolStripMenuItem
             // 
             this.bookOfSkywindIIToolStripMenuItem.Name = "bookOfSkywindIIToolStripMenuItem";
-            this.bookOfSkywindIIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkywindIIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkywindIIToolStripMenuItem.Text = "바람의 서 2권";
             this.bookOfSkywindIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkywindIIToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(143, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(203, 6);
             // 
             // bookOfSkyearthIToolStripMenuItem
             // 
             this.bookOfSkyearthIToolStripMenuItem.Name = "bookOfSkyearthIToolStripMenuItem";
-            this.bookOfSkyearthIToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.bookOfSkyearthIToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
             this.bookOfSkyearthIToolStripMenuItem.Text = "땅의 서 1권";
             this.bookOfSkyearthIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyearthIToolStripMenuItem_Click);
             // 
@@ -551,7 +580,7 @@
             // 
             this.toolStripMenuItem_SelectApply.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem_SelectApply.Name = "toolStripMenuItem_SelectApply";
-            this.toolStripMenuItem_SelectApply.Size = new System.Drawing.Size(67, 20);
+            this.toolStripMenuItem_SelectApply.Size = new System.Drawing.Size(96, 29);
             this.toolStripMenuItem_SelectApply.Text = "적용하기";
             this.toolStripMenuItem_SelectApply.Click += new System.EventHandler(this.toolStripMenuItem_SelectApply_Click);
             // 
@@ -561,8 +590,9 @@
             this.tabPage_Log.Controls.Add(this.panel_LogCover);
             this.tabPage_Log.Controls.Add(this.menuStrip_LogTab);
             this.tabPage_Log.Location = new System.Drawing.Point(114, 4);
+            this.tabPage_Log.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Log.Name = "tabPage_Log";
-            this.tabPage_Log.Size = new System.Drawing.Size(426, 262);
+            this.tabPage_Log.Size = new System.Drawing.Size(698, 398);
             this.tabPage_Log.TabIndex = 2;
             this.tabPage_Log.Text = "로그";
             // 
@@ -571,9 +601,10 @@
             this.panel_LogCover.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_LogCover.Controls.Add(this.richTextBox_Log);
             this.panel_LogCover.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_LogCover.Location = new System.Drawing.Point(0, 24);
+            this.panel_LogCover.Location = new System.Drawing.Point(0, 35);
+            this.panel_LogCover.Margin = new System.Windows.Forms.Padding(4);
             this.panel_LogCover.Name = "panel_LogCover";
-            this.panel_LogCover.Size = new System.Drawing.Size(426, 238);
+            this.panel_LogCover.Size = new System.Drawing.Size(698, 363);
             this.panel_LogCover.TabIndex = 1;
             // 
             // richTextBox_Log
@@ -583,10 +614,11 @@
             this.richTextBox_Log.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox_Log.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.richTextBox_Log.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox_Log.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox_Log.Name = "richTextBox_Log";
             this.richTextBox_Log.ReadOnly = true;
             this.richTextBox_Log.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox_Log.Size = new System.Drawing.Size(424, 236);
+            this.richTextBox_Log.Size = new System.Drawing.Size(696, 361);
             this.richTextBox_Log.TabIndex = 0;
             this.richTextBox_Log.Text = "";
             this.richTextBox_Log.TextChanged += new System.EventHandler(this.richTextBox_Log_TextChanged);
@@ -594,26 +626,28 @@
             // menuStrip_LogTab
             // 
             this.menuStrip_LogTab.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip_LogTab.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip_LogTab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem_LogCopy,
             this.toolStripMenuItem_LogClear});
             this.menuStrip_LogTab.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_LogTab.Name = "menuStrip_LogTab";
-            this.menuStrip_LogTab.Size = new System.Drawing.Size(426, 24);
+            this.menuStrip_LogTab.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip_LogTab.Size = new System.Drawing.Size(698, 35);
             this.menuStrip_LogTab.TabIndex = 0;
             this.menuStrip_LogTab.Text = "menuStrip2";
             // 
             // toolStripMenuItem_LogCopy
             // 
             this.toolStripMenuItem_LogCopy.Name = "toolStripMenuItem_LogCopy";
-            this.toolStripMenuItem_LogCopy.Size = new System.Drawing.Size(70, 20);
+            this.toolStripMenuItem_LogCopy.Size = new System.Drawing.Size(101, 29);
             this.toolStripMenuItem_LogCopy.Text = "로그 복사";
             this.toolStripMenuItem_LogCopy.Click += new System.EventHandler(this.toolStripMenuItem_LogCopy_Click);
             // 
             // toolStripMenuItem_LogClear
             // 
             this.toolStripMenuItem_LogClear.Name = "toolStripMenuItem_LogClear";
-            this.toolStripMenuItem_LogClear.Size = new System.Drawing.Size(70, 20);
+            this.toolStripMenuItem_LogClear.Size = new System.Drawing.Size(101, 29);
             this.toolStripMenuItem_LogClear.Text = "로그 삭제";
             this.toolStripMenuItem_LogClear.Click += new System.EventHandler(this.toolStripMenuItem_LogClear_Click);
             // 
@@ -623,8 +657,9 @@
             this.tabPage_Info.Controls.Add(this.label_About);
             this.tabPage_Info.Controls.Add(this.linkLabel_GitHub);
             this.tabPage_Info.Location = new System.Drawing.Point(114, 4);
+            this.tabPage_Info.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Info.Name = "tabPage_Info";
-            this.tabPage_Info.Size = new System.Drawing.Size(426, 262);
+            this.tabPage_Info.Size = new System.Drawing.Size(698, 398);
             this.tabPage_Info.TabIndex = 3;
             this.tabPage_Info.Text = "정보";
             // 
@@ -633,8 +668,9 @@
             this.label_About.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_About.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.label_About.Location = new System.Drawing.Point(0, 0);
+            this.label_About.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_About.Name = "label_About";
-            this.label_About.Size = new System.Drawing.Size(426, 210);
+            this.label_About.Size = new System.Drawing.Size(698, 320);
             this.label_About.TabIndex = 0;
             this.label_About.Text = "[제작 및 문의]\r\n유채색\r\n라그린네\r\n히비야\r\n\r\n[저작권]\r\n기재되어있는 회사명 · 제품명 · 시스템 이름은\r\n해당 소유자의 상표 또는 등록 " +
     "상표입니다.\r\n(C) 2010 - 2017 SQUARE ENIX CO., LTD All Rights Reserved.\r\nKorea Publish" +
@@ -644,9 +680,10 @@
             // linkLabel_GitHub
             // 
             this.linkLabel_GitHub.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linkLabel_GitHub.Location = new System.Drawing.Point(0, 210);
+            this.linkLabel_GitHub.Location = new System.Drawing.Point(0, 320);
+            this.linkLabel_GitHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel_GitHub.Name = "linkLabel_GitHub";
-            this.linkLabel_GitHub.Size = new System.Drawing.Size(426, 52);
+            this.linkLabel_GitHub.Size = new System.Drawing.Size(698, 78);
             this.linkLabel_GitHub.TabIndex = 0;
             this.linkLabel_GitHub.TabStop = true;
             this.linkLabel_GitHub.Text = "GitHub";
@@ -655,11 +692,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(544, 321);
+            this.ClientSize = new System.Drawing.Size(816, 482);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.label_AboutTitle);
             this.Controls.Add(this.panel_TopSetting);
@@ -667,8 +704,9 @@
             this.Font = new System.Drawing.Font("Malgun Gothic", 9.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(560, 360);
+            this.MinimumSize = new System.Drawing.Size(829, 512);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "임무/돌발 찾기 도우미";

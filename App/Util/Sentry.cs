@@ -12,12 +12,7 @@ namespace App
 
         internal static void Initialise()
         {
-            ravenClient = new RavenClient(Global.RAVEN_DSN);
-            ravenClient.Release = Global.VERSION;
-            ravenClient.Logger = "client";
-
-            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
-            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+  
         }
 
         internal static void Report(Exception exception, object extra)
@@ -36,17 +31,7 @@ namespace App
 
         internal static void Report(SentryEvent @event)
         {
-#if !DEBUG
-            try
-            {
-                @event.Tags.Add("Arch", Environment.Is64BitOperatingSystem ? "x64" : "x86");
-                @event.Tags.Add("OS", Environment.OSVersion.VersionString);
-                @event.Tags.Add("CLR", Environment.Version.ToString());
 
-                ravenClient.Capture(@event);
-            }
-            catch { }
-#endif
         }
 
         internal static void ReportAsync(Exception exception, object extra)
