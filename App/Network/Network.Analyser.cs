@@ -162,7 +162,7 @@ namespace App
 
                 if (!seenPackets.Contains(opcode))
                 {
-                    //Log.I(string.Format("Saw packet type {0:x4}.", opcode));
+                    Log.I(string.Format("Saw packet type {0:x4}.", opcode));
                     seenPackets.Add(opcode);
                 }
 
@@ -485,7 +485,7 @@ namespace App
 
                     Log.S("l-queue-matched", instance.Name);
                 }
-                else if (opcode == 0x00dc)
+                else if (opcode == 0x00e6)
                 {
                     var itemId = BitConverter.ToUInt32(data, 0);
                     int offset = 4;
@@ -501,7 +501,7 @@ namespace App
                     }
                     //Log.Bu(data);
                 }
-                else if (opcode == 0x00d7 || opcode == 0xd8 || opcode == 0xdc)
+                else if (opcode == 0x00e1 || opcode == 0xe2 || opcode == 0xe6)
                 {
                     var itemId = BitConverter.ToUInt32(data, 0);
                    // Log.I(string.Format("packet {0:x4} {0}", itemId));
@@ -530,9 +530,12 @@ namespace App
             sale.Hq = message[offset + 0x10] != 0;
             sale.Buyer = System.Text.Encoding.UTF8.GetString(message, offset + 0x12, 0x22).TrimEnd(new[] { '\0' });
 
-            firebase.Child("history")
+            if (true)
+            {
+                firebase.Child("history")
                 .Child(itemId.ToString())
                 .Child(sale.SaleTime.ToString()).PutAsync(sale);
+            }
             Log.I(string.Format("{0}", JsonConvert.SerializeObject(sale, Formatting.Indented)));
             
             return PACKET_LEN;
